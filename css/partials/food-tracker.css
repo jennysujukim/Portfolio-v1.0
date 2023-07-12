@@ -1,0 +1,270 @@
+ 
+
+.banner {
+    background-image: url(../../images/project-foodTracker/foodTracker-thumbnail.jpg);
+}
+
+
+
+/* ------- Design ------- */
+
+.typography {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.typography img {
+    width: 220px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.colour {
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.colour-swatch {
+    height: 100px;
+    width: 100%;
+}
+
+.colour-1 {
+    background: #f6f6f6;
+}
+
+.colour-2 {
+    background: #E7E6E4;
+}
+
+.colour-3 {
+    background: #D9D5CF;
+}
+
+.colour-4 {
+    background: #C1BBB0;
+}
+
+.colour-5 {
+    background: #A68972;
+}
+
+.colour-6 {
+    background: #212121;
+}
+
+.colour-swatch {
+    position: relative;
+}
+
+.colour-info {
+    position: absolute;
+    height: 100px;
+    left: 1.5rem;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: -50%;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+}
+
+.colour-info.visible {
+    left: 1.5rem;
+    opacity: 1;
+}
+
+.colour-info p {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.wireframes p {
+    padding: 1rem 0;
+    font-weight: 400;
+}
+
+.wireframes-img img {
+    width: 100%;
+    border: 1px solid var(--black);
+}
+
+.grid {
+    padding-top: 3rem;
+}
+
+.grid-title {
+    padding-bottom: 2rem;
+}
+
+.grid-title p {
+    font-weight: 400;
+}
+
+.grid-img {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-mobile {
+    background-image: url(../../images/project-cafeLayered/wireframes-mobile.jpg);
+    transition: all 300ms ease-in-out;
+}
+
+.grid-mobile:hover {
+    background-image: url(../../images/project-cafeLayered/wireframes-mobile-grid.jpg);
+}
+
+.grid-tablet {
+    background-image: url(../../images/project-cafeLayered/wireframes-tablet.jpg);
+    transition: all 300ms ease-in-out;
+}
+
+.grid-tablet:hover {
+    background-image: url(../../images/project-cafeLayered/wireframes-tablet-grid.jpg);
+}
+
+.grid-desktop {
+    background-image: url(../../images/project-cafeLayered/wireframes-desktop.jpg);
+    transition: all 300ms ease-in-out;
+}
+
+.grid-desktop:hover {
+    background-image: url(../../images/project-cafeLayered/wireframes-desktop-grid.jpg);
+}
+
+
+/* ------- Development ------- */
+
+.codepen {
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.develop-phase-3 p {
+    padding-bottom: 0.5rem;
+}
+
+/* ------- Live Site CTA ------- */
+
+.livesite-btn {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.livesite-btn a {
+    margin: 0 0.2rem;
+}
+
+/* ------- Media Query ------- */
+
+@media screen and (min-width: 460px) {
+
+    .intro-btn a {
+        margin: 0 0.2rem;
+    }
+
+    .grid-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    
+    .grid-img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .typography {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 1rem;
+    }
+    
+    .typography img {
+        width: 280px;
+        padding-bottom: 0;
+        grid-column: auto / span 3;
+    }
+
+    .wireframes-title {
+        padding-top: 5rem;
+    }
+
+    .wireframes {
+        margin: 0 auto;
+    }
+
+    .wireframes p {
+        font-size: 1.2rem;
+    }
+
+    .wireframes-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wireframes-img img {
+        max-width: 80%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 1rem;
+    }
+
+    .grid {
+        grid-column: auto / span 2;
+        padding-top: 4rem;
+    }
+
+    .grid-img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .livesite-btn {
+        padding-bottom: 10rem;
+    }
+
+    .livesite-btn a {
+        margin: 0 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .wireframes-title {
+        padding-top: 8rem;
+    }
+
+    .wireframes p {
+        padding: 2rem 0;
+    }
+
+    .livesite-btn {
+        padding-bottom: 12rem;
+    }
+    
+
+}

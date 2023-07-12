@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;500;600&display=swap");
+
+
+/* ------------------------
+Global
+------------------------ */
+
+:root {
+    --white: #FDFBFB;
+    --black: #0E0E10;
+    --grey: #A0A0A0;
+    --lavender: #BDC0FF;
+    --purple: #5735B8;
+    --blue: #3546B8;
+    --serif: 'Gentium Book Plus', serif;
+    --san-serif: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--san-serif);
+    line-height: 2;
+}
+
+:root.dark-mode {
+    --white: #0E0E10;
+    --black: #FDFBFB;
+    --lavender: #5735B8;
+    --purple: #BDC0FF;
+}
+
+.container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.chip {
+    width: 100%;
+    margin-right: 0.3rem;
+    padding: 0.2rem 0.7rem;
+    color: var(--purple);
+    font-size: 0.7rem;
+    font-weight: 400;
+    border: solid 2px var(--purple);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* ------------------------
+Typography
+------------------------ */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2, h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/* ------------------------
+Header - Navigation
+------------------------ */
+
+.header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    height: 60px;
+    border-bottom: 2px solid var(--purple);
+}
+
+.header-mode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.header-logo {
+    width: 3rem;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+}
+
+.header-logo svg {
+    fill: var(--black);
+}
+
+.header-menu, .header-mode {
+    font-weight: 500;
+}
+
+/* -- menu navigation overlay -- */
+
+.nav-container {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple);
+
+}
+
+.nav {
+    position: relative;
+    padding: 5.5rem 1.5rem;
+}
+
+/* --- btns --- */
+
+.nav-open, .nav-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.nav-close {
+    padding-top: 1.5rem;
+}
+
+/*  btns - close arrow svg */
+
+.nav-close-arrow {
+    fill: none;
+}
+
+.nav-close-arrow-path {
+    stroke: var(--white);
+    stroke-width: 1.5;
+}
+
+/*  btns - links */
+
+.nav a {
+    font-size: 2.5rem;
+    color: var(--white);
+    line-height: 1.8;
+    transition: all 500ms ease-in-out;
+}
+
+.projects-sub {
+    flex-direction: column;
+    margin-top: 0.7rem;
+}
+
+.projects-sub a {
+    font-weight: 400;
+    padding: 0.3rem 0 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* ------------------------
+Scrollbar
+------------------------ */
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: var(--lavender); 
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple); 
+  }
+
+
+
+/* ------------------------
+Video
+------------------------ */
+
+.video {
+    width: 100vw;
+}
+
+/* ------------------------
+Footer
+------------------------ */
+
+.footer {
+    margin-top: 6rem;
+    color: var(--purple);
+    position: relative;
+    overflow: hidden;
+}
+
+/* -- footer keep in touch --  */
+
+.footer-wrapper {
+    padding-bottom: 22vw;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 13vw;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+}
+
+/* -- footer Content --  */
+
+.footer-content {
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+ 
+.footer-content a {
+    color: var(--purple);
+}
+
+.footer-content a:hover {
+    border-bottom: 1px solid var(--purple);
+}
+
+/* ------------------------
+Media Query
+------------------------ */
+
+@media screen and (min-width: 576px) {
+
+    /* -- Footer -- */
+
+    .footer-content {
+        font-size: 1.2rem;
+        padding: 1.2rem 0;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding: 0 3rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2, h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    .chip {
+        font-weight: 400;
+        margin-right: 0.5rem;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* -- menu navigation overlay -- */
+
+    .nav {
+        position: relative;
+        padding: 7rem 3rem;
+    }
+
+    .nav-close {
+        padding: 2.5rem 3rem;
+    }
+
+    /* -- Footer -- */
+
+
+    .footer-wrapper {
+    padding-bottom: 22vw;
+
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 75rem;
+        padding: 0 5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2, h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .chip {
+        margin-right: 0.7rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* -- menu navigation overlay -- */
+
+    .nav {
+        position: relative;
+        padding: 7rem 5rem;
+    }
+
+    .header-mode {
+        padding: 1rem 2rem;
+    }
+
+    .nav-open {
+        padding: 1rem 2rem;
+    }
+
+    .nav-close {
+        padding: 3rem;
+    }
+
+    .nav a {
+        font-size: 3rem;
+    }
+    
+    .projects-sub {
+        margin-top: 1rem;
+    }
+    
+    .projects-sub a {
+        font-size: 1.8rem;
+    }
+
+    
+    /* -- Footer -- */
+    
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1rem;
+        padding-bottom: 20vw;
+    }
+
+    .footer-content {
+        grid-column: auto / span 6;
+    }
+    
+    .footer-title {
+        bottom: -100px;
+    }
+
+    .footer-content-email, .footer-content-top {
+        text-align: right;
+        margin-bottom: 0;
+    }
+}

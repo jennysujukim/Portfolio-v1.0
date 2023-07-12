@@ -1,0 +1,210 @@
+
+/* ------------------------
+Read Me - Banner
+------------------------ */
+
+.banner {
+    background-image: url(../../images/project-readMe/readMe-banner.jpg);
+}
+
+/* ------------------------
+Read Me - Analyze
+------------------------ */
+
+.analyze-goals {
+    padding-bottom: 1rem;
+}
+
+.analyze-goals p {
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+/* ------------------------
+Read Me - Design
+------------------------ */
+
+/* -- Design - Wireframes -- */
+
+.design-wireframes-list {
+    padding-top: 2rem;
+}
+
+.design-wireframes-list li {
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.prototype-img {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.prototype-img img {
+    width: 100%;
+}
+
+/* ------------------------
+Read Me - Evaluate
+------------------------ */
+
+/* -- Evaluate - Usability Test -- */
+
+.evaluate-test {
+    padding-bottom: 2rem;
+}
+
+.evaluate-test-result {
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.evaluate-test-result p {
+    font-weight: 400;
+}
+
+.evaluate-test-result span {
+    font-size: 2.5rem;
+    padding-left: 0.7rem;
+}
+
+/* -- Evaluate - Assessing -- */
+
+.evaluate-painpoint {
+    border-radius: 30px;
+    border: 2px solid var(--purple);
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+}
+
+.evaluate-painpoint-img div {
+    padding: 1rem 0.5rem;
+}
+
+.evaluate-painpoint p {
+    text-align: left;
+}
+
+/* ------------------------
+Read Me - Implement
+------------------------ */
+
+.revision-btn {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.revision-video {
+    padding: 3rem 0;
+}
+
+/* ------------------------
+Next Project
+------------------------ */
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    /* -- Read Me - Analyze -- */
+
+    .analyze-goals {
+        padding-bottom: 1.5rem;
+    }
+
+    /* -- Read Me - Evaluate -- */
+
+    .evaluate-painpoint-img-resize {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    /* -- Read Me - Implement -- */
+
+    .revision-video {
+        padding-bottom: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+ 
+    /* -- Read Me - Analyze -- */
+
+    .analyze-goals {
+        padding: 0.5rem 0;
+        margin: auto 0;
+    }
+
+    .analyze-goals p {
+        text-align: left;
+    }
+
+    .analyze-goals-txt {
+        text-align: left;
+    }
+
+    /* -- Read Me - Design -- */
+
+    .design-wireframes-txt {
+        text-align: left;
+    }
+
+    .design-wireframes-list {
+        padding-top: 0;
+        padding-left: 2.5rem;
+        margin: auto 0;
+    }
+    
+    .design-wireframes-list li {
+        padding: 0;
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+
+    .prototype-img {
+        padding: 0 5rem;
+        max-width: 67.5rem;
+        margin: 0 auto;
+    }
+
+    /* -- Read Me - Evaluate -- */
+
+    .evaluate-test {
+        padding-bottom: 0;
+        margin: auto 0;
+    }
+    
+    .evaluate-test-result {
+        justify-content: flex-start;
+    }
+
+    .evaluate-test-txt {
+        text-align: left;
+    }
+
+    /* -- Read Me - Implement -- */
+
+    .revision-txt {
+        text-align: left;
+    }
+
+    .revision-video {
+        padding: 0 5rem 8rem 5rem;
+        max-width: 67.5rem;
+        margin: 0 auto;
+    }
+
+    .revision-btn {
+        text-align: right;
+        padding-top: 0;
+        margin: auto 0;
+    }
+
+}

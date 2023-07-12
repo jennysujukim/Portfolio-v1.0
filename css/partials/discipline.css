@@ -1,0 +1,189 @@
+/* ------------------------
+Discipline
+------------------------ */
+
+.discipline-bg {
+    margin-top: 60px;
+}
+
+/* ------------------------
+Discipline - Title
+------------------------ */
+
+.discipline-title {
+    padding: 3rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;   
+}
+
+.button-arrow {
+    padding-left: 0.2rem;
+    width: 1.5rem;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.button-arrow.active {
+    opacity: 1;
+    transform: translateX(0.5rem);
+}
+
+.current {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* ------------------------
+Discipline - Projects
+------------------------ */
+
+.project-card {
+    height: calc(100vh - 60px - 1rem);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.project-card-link {
+    height: calc(100vh - 60px - 1rem);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.project-thumbnail {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-thumbnail img {
+    width: 100%;
+}
+
+.project-info {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.project-info-description  {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------
+Media query
+------------------------ */
+
+
+@media screen and (min-width: 768px) {
+    
+    .discipline-bg {
+        margin-top: 0;
+    }
+
+
+    /* --- Dicsipline Wrapper --- */
+
+    .discipline-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .discipline-title {
+        grid-column: auto / span 3;
+        padding: 0 3rem;
+        margin-left: 0;
+        height: 100vh;
+    }
+
+    .discipline-project {
+        grid-column: 4 / span 3;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    /* --- Dicsipline title --- */
+
+    .discipline-title h1 {
+        font-size: 4rem;
+    }
+    
+    .button {
+        font-size: 1.8em;
+        padding-left: 0.8rem;
+    }
+
+    .current {
+        font-size: 1.8rem;
+    }
+
+    /* --- Dicsipline Project --- */
+ 
+    .project-list {
+        margin-top: 60px;
+        width: 100%;
+        height: 400vh;
+    }
+
+    .project-card {
+        height: calc(100vh - 60px);
+        margin-bottom: 0;
+    }
+    
+    .project-info {
+        padding: 0 3rem;
+    }
+    
+    .project-info-description  {
+        margin-bottom: 1.5rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .discipline-title {
+        padding: 0 5rem;
+    }
+
+    /* --- Dicsipline title --- */
+
+    
+    .button {
+        font-size: 2em;
+        padding-left: 1.2rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .current {
+        font-size: 2rem;
+    }
+
+    /* --- Dicsipline Project --- */
+ 
+    .project-info h3 {
+        line-height: 1;
+        padding-bottom: 1.5rem;
+    }
+    
+    .project-info-description  {
+        margin-bottom: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    
+
+}
